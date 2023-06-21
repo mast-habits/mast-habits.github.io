@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+
+/*
+black        #000;
+dark blue    #9AC5F4;
+blue         #99DBF5;
+light blue   #A7ECEE;
+yellow       #FFF5D4;
+*/
+
+:root {
+  --bl: #000;
+  --db: #9ac5f4;
+  --b: #99dbf5;
+  --lb: #a7ecee;
+  --y: #fff5d4;
+  --font: #573353;
+  --font-family: "Manrope", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--font);
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fdf5d9;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.66);
+  color: var(--font);
+  font-family: var(--font-family);
+  background-color: var(--y);
+}
+nav ul {
+  list-style-type: none;
+}
+nav .logo-img,
+nav .download {
+  max-height: 96px;
+}
+
+.download {
+  background-color: var(--db);
+  transition: 0.3s;
+  font-size: 32px;
+  font-family: "Athiti", sans-serif;
+  font-weight: 1000;
+  border-radius: 8px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.download:hover {
+  background-color: var(--b);
+}
+
+.download a {
+  color: inherit;
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0;
+  margin: 1rem 0;
+  background-image: url("/imgs/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+}
+.top p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+.dwnld-links a img {
+  width: 164px;
+}
+
+.dwnld-links {
+  margin-top: 2rem;
+}
+
+.dwnld-links a {
+  margin: 0 12px;
+}
+
+@media (max-width: 768px) {
+  nav .logo-img,
+  nav .download {
+    max-height: 64px;
+  }
+  .download {
+    font-size: 20px;
+    height: 48px;
+  }
+  .dwnld-links a img {
+    width: 164px;
+  }
+}
+
+@media (max-width: 420px) {
+  .top h1 {
+    font-size: 48px;
+  }
+  .dwnld-links a img {
+    width: 112px;
+  }
+}
+
+hr {
+  margin: 0 3rem;
+}
+
+.pics {
+  text-align: center;
+}
+.pics img {
+  margin: 0 48px;
+  border: 4px solid black;
+  border-radius: 36px;
+  height: 90vh;
+}
+
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+  margin-top: 48px;
+  padding: 24px;
+  font-size: 1.5rem;
+}

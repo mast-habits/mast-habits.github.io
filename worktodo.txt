@@ -1,0 +1,4 @@
+make google play and app store download images svg     check
+make the images transparent                            check
+add content!!                                          in progress
+see if stutee replies                                  she didnt
